@@ -1,0 +1,562 @@
+
+<html lang="en">
+    <head>
+        <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+        <title>Payment Page</title>
+      
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+
+        
+        
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <style>
+           
+   
+            .container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+input[type="submit"] {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      background-color: blue;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    input[type="submit"]:hover {
+      background-color: lightblue;
+    }
+    .header-back .navbar-light .navbar-nav .active{
+        color: #5f5f5f !important;
+    }
+    .header-back{
+    background-color: #ffffff;
+    padding: 12px 0;
+}
+.nav-back{
+    width: 80%;
+    margin: 0 auto;
+}
+.nav-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-logo{
+    width: 20%;
+}
+.nav-logo img{
+    width: 180px;
+}
+.nav-menu{
+    width: 80%;
+}
+.nav-menu-item{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: flex-end;
+}
+.nav-menu.show{
+    display: block !important;
+    transition: max-height 0.25s ease-in;
+}
+.nav-list-item{
+    padding: 0 12px;
+}
+.nav-list-link{
+    font-size: 15px;
+    font-weight: 500;
+    color: #00000080;
+    text-transform: uppercase;
+    padding: 0;
+    transition: .4s;
+}
+.nav-list-link:hover{
+    color: #000;
+    text-decoration: none;
+}
+.nav-list-link.active{
+    color: #000;
+}
+.menu-icon-wrap{
+    display: none;
+    text-align: right;
+}
+.menu-icon-wrap img{
+    width: 40px;
+}
+@media (max-width: 1200px){
+    .nav-menu-item{
+        display: block;
+    }
+    .nav-menu{
+        display: none;
+    }
+    .menu-icon-wrap{
+        display: block;
+    }
+    .nav-menu{
+        width: 100%;
+        margin: 12px 0 0;
+    }
+    .nav-list-item{
+        padding: 8px 0;
+    }
+    .nav-list-link{
+        font-size: 15px;
+    }
+}
+@media (max-width: 767px) {
+    .page-wrap {
+        padding: 0 25px !important;
+    }
+    .nav-logo img{
+        width: 150px;
+    }
+}
+
+/*Header*/
+
+/*Footer*/
+
+.footer-back {
+    background-image: url(footer.avif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    margin-top: 7%;
+    padding: 80px 0;
+}
+
+.footer-wrap{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.footer-mar {
+    margin: 0 -15px !important;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.foo-width-1{
+    width: 45%;
+}
+
+.foo-width-2{
+    width: 25%;
+}
+
+.foo-width-3{
+    width: 30%;
+}
+
+.footer-pad {
+    padding: 0 18px !important;
+}
+
+.footer-text h1 {
+    color: #fff;
+    font-size: 21px;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    margin-bottom: 25px;
+}
+
+.footer-para {
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 2.3;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+}
+
+.footer-text a {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 22px;
+    display: block;
+}
+
+.footer-text a:hover {
+    color: #a7a7a7;
+    text-decoration: none;
+}
+
+.footer-text .address {
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 3;
+    font-weight: 400;
+}
+
+.media-icon {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.media-icon img {
+    width: 25px;
+    margin-right: 15px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #ffffff;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.footer-links a {
+    display: inline-block;
+    font-size: 13px;
+    color: #ebebea;
+    margin-left: 20px;
+}
+
+.footer-links {
+    text-align: right;
+}
+
+.footer-border {
+    border-top: 2px solid #7b7978;
+    margin: 15px 0 0 0;
+    padding: 50px 0 0 0;
+    text-align: center;
+    width: 100%;
+}
+
+@media (max-width: 992px) {
+    .footer-text h1 {
+        font-size: 15px;
+        margin-bottom: 10px;
+        margin-top: 15px;
+    }
+
+    .footer-para {
+        font-size: 13px;
+        line-height: 2;
+    }
+
+    .footer-text a {
+        font-size: 13px;
+        margin-bottom: 12px;
+    }
+
+    .footer-text .address {
+        font-size: 13px;
+        line-height: 2;
+    }
+
+    .media-icon i {
+        font-size: 20px;
+        margin-right: 15px;
+    }
+
+    .footer-bottom p {
+        font-size: 13px;
+    }
+
+    .footer-back {
+        padding: 30px 0;
+    }
+
+    .footer-border {
+        padding: 25px 0 0 0;
+    }
+
+    .foo-width-1{
+        width: 100%;
+    }
+
+    .foo-width-2{
+        width: 50%;
+    }
+
+    .foo-width-3{
+        width: 50%;
+    }
+}
+
+@media (max-width: 767px) {
+    .footer-bottom p {
+        font-size: 13px;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .foo-width-1{
+        width: 100%;
+    }
+
+    .foo-width-2{
+        width: 100%;
+    }
+
+    .foo-width-3{
+        width: 100%;
+    }
+}
+
+
+        </style>
+    </head>
+    	<div class="header-back">
+    <div class="nav-back">
+        <div class="nav-wrap">
+            <div class="nav-logo">
+                <a href="Hotel.html">
+                    <img src="logo.jpg" alt="logo">
+                </a>
+            </div>
+            <div class="menu-icon-wrap">
+                <img src="menu.png" class="menu-icon" alt="menu img" onclick="menuToggle()">
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-menu-item" id="nav-menu-item">
+                    <li class="nav-list-item">
+                        <a class="nav-list-link active" href="Home.html">Home</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a class="nav-list-link" href="Package.php">Packages</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a class="nav-list-link" href="Hotel.html">Hotels</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a class="nav-list-link" href="emergencey.html">Emergency Services</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a class="nav-list-link" href="contactus.html">Contact Us</a>
+                    </li>
+                    <li class="nav-list-item pr-0">
+                        <a class="nav-list-link" href="login.php">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+    <body>
+        <div class="container">
+            <h1>Payment Page</h1>
+            <form action="process_payment.php" method="POST" id="paymentForm">
+                <div class="form-group">
+                    <label for="cardNumber">Card Number</label>
+                    <input type="text" id="cardNumber" name="cardNumber" placeholder="Enter your card number" required>
+                    <span class="error" id="cardNumberError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="expiryDate">Expiry Date</label>
+                    <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" required>
+                    <span class="error" id="expiryDateError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" name="cvv" placeholder="CVV" required>
+                    <span class="error" id="cvvError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="cardHolderName">Cardholder Name</label>
+                    <input type="text" id="cardHolderName" name="cardHolderName" placeholder="Enter cardholder name" required>
+                    <span class="error" id="cardHolderNameError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="billingAddress">Billing Address</label>
+                    <textarea id="billingAddress" name="billingAddress" placeholder="Enter billing address" required></textarea>
+                    <span class="error" id="billingAddressError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter email address" required>
+                    <span class="error" id="emailError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="text" id="phone" name="phone" placeholder="Enter phone number" required>
+                    <span class="error" id="phoneError"></span>
+                </div>
+
+                <input  type="submit" value="Make Payment">
+            </form>
+        </div>
+
+        <script >
+
+
+            document.addEventListener("DOMContentLoaded", function () {
+                document.getElementById("paymentForm").addEventListener("submit", function (event) {
+                    event.preventDefault(); // Prevent the form from submitting
+
+                    // Reset error messages
+                    resetErrors();
+
+                    var cardNumberInput = document.getElementById("cardNumber");
+                    var expiryDateInput = document.getElementById("expiryDate");
+                    var cvvInput = document.getElementById("cvv");
+                    var cardHolderNameInput = document.getElementById("cardHolderName");
+                    var billingAddressInput = document.getElementById("billingAddress");
+                    var emailInput = document.getElementById("email");
+                    var phoneInput = document.getElementById("phone");
+
+                    var cardNumber = cardNumberInput.value.trim();
+                    var expiryDate = expiryDateInput.value.trim();
+                    var cvv = cvvInput.value.trim();
+                    var cardHolderName = cardHolderNameInput.value.trim();
+                    var billingAddress = billingAddressInput.value.trim();
+                    var email = emailInput.value.trim();
+                    var phone = phoneInput.value.trim();
+
+                    // Card Number validation
+                    if (!validateCardNumber(cardNumber)) {
+                        displayError(cardNumberInput, "Card number must be 16 digits");
+                        return;
+                    }
+
+                    // Expiry Date validation
+                    if (!validateExpiryDate(expiryDate)) {
+                        displayError(expiryDateInput, "Expiry date must be in MM/YY format");
+                        return;
+                    }
+
+                    // CVV validation
+                    if (!validateCVV(cvv)) {
+                        displayError(cvvInput, "CVV must be 3 digits");
+                        return;
+                    }
+
+                    // Cardholder Name validation
+                    if (!validateCardHolderName(cardHolderName)) {
+                        displayError(cardHolderNameInput, "Please enter a valid cardholder name");
+                        return;
+                    }
+
+                    // Billing Address validation
+                    if (!validateBillingAddress(billingAddress)) {
+                        displayError(billingAddressInput, "Please enter a valid billing address");
+                        return;
+                    }
+
+                    // Email validation
+                    if (!validateEmail(email)) {
+                        displayError(emailInput, "Please enter a valid email address");
+                        return;
+                    }
+
+                    // Phone Number validation
+                    if (!validatePhone(phone)) {
+                        displayError(phoneInput, "Please enter a valid phone number");
+                        return;
+                    }
+
+                    // If all validations pass, submit the form
+                    this.submit();
+                });
+
+                function validateCardNumber(cardNumber) {
+                    return /^\d{16}$/.test(cardNumber);
+                }
+
+                function validateExpiryDate(expiryDate) {
+                    return /^(0[1-9]|1[0-2])\/\d{2}$/.test(expiryDate);
+                }
+
+                function validateCVV(cvv) {
+                    return /^\d{3}$/.test(cvv);
+                }
+
+                function validateCardHolderName(cardHolderName) {
+                    return /^[a-zA-Z\s]+$/.test(cardHolderName);
+                }
+
+                function validateBillingAddress(billingAddress) {
+                    return billingAddress !== "";
+                }
+
+                function validateEmail(email) {
+                    
+                    return /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email);
+                }
+
+                function validatePhone(phone) {
+                    return /^\d{10}$/.test(phone);
+                }
+
+                function displayError(inputElement, errorMessage) {
+                    var errorElement = inputElement.nextElementSibling;
+                    errorElement.textContent = errorMessage;
+                    inputElement.classList.add("error-input");
+                }
+
+                function resetErrors() {
+                    var errorElements = document.getElementsByClassName("error");
+                    for (var i = 0; i < errorElements.length; i++) {
+                        errorElements[i].textContent = "";
+                    }
+
+                    var inputElements = document.getElementsByClassName("error-input");
+                    for (var j = 0; j < inputElements.length; j++) {
+                        inputElements[j].classList.remove("error-input");
+                    }
+                }
+            });
+        </script>
+    </body>
+</html>
